@@ -33,6 +33,9 @@ output "cassandra" {
 output "elasticsearch" {
 	value = [ "${module.maps.computed_elasticsearch_1}", "${module.maps.computed_elasticsearch_2}", "${module.maps.computed_elasticsearch_3}" ]
 }
+output "kafka" {
+    value = [ "${module.maps.computed_kafka_1}", "${module.maps.computed_kafka_2}", "${module.maps.computed_kafka_3}" ]
+}
 output "private_1" {
 	value = "${module.maps.computed_private_1}"
 }
@@ -95,4 +98,13 @@ output "elasticsearch_2" {
 }
 output "elasticsearch_3" {
 	value = "${module.maps.computed_elasticsearch_3}"
+}
+output "kafka_1" {
+    value = "${module.maps.computed_kafka_1}"
+}
+output "kafka_2" {
+    value = "${module.maps.computed_kafka_2}"
+}
+output "kafka_3" {
+    value = "${module.maps.computed_kafka_3}"
 }

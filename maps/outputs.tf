@@ -58,6 +58,15 @@ output "computed_elasticsearch_2" {
 output "computed_elasticsearch_3" {
 	value = "${var.input_elasticsearch_3}"
 }
+output "computed_kafka_1" {
+    value = "${var.input_kafka_1}"
+}
+output "computed_kafka_2" {
+    value = "${var.input_kafka_2}"
+}
+output "computed_kafka_3" {
+    value = "${var.input_kafka_3}"
+}
 output "computed_master_1" {
 	value = "${var.input_master_1}"
 }

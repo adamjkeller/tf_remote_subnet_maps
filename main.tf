@@ -25,4 +25,7 @@ module "maps" {
   input_master_1               = "${cidrsubnet(module.maps.computed_aws, 6, 18)}"
   input_master_2               = "${cidrsubnet(module.maps.computed_aws, 6, 19)}"
   input_master_3               = "${cidrsubnet(module.maps.computed_aws, 6, 20)}"
+  input_kafka_1                = "${cidrsubnet(module.maps.computed_aws, 6, 21)}"
+  input_kafka_2                = "${cidrsubnet(module.maps.computed_aws, 6, 22)}"
+  input_kafka_3                = "${cidrsubnet(module.maps.computed_aws, 6, 23)}"
 }
